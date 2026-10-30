@@ -1,0 +1,39 @@
+hero:
+  subtitle: 'Creating Animations in No Time'
+  title: 'Hagenberg Animation Jam'
+  description: 'A 36-hour creative showdown where FH Hagenberg students bring fresh animated stories to life.'
+  images:
+    - animationjam_hero.webp
+highlights:
+  - icon: document
+    title: '1 Topic'
+    text: 'Each Hagenberg Animation Jam revolves around one existing topic, revealed shortly before the event begins.'
+  - icon: clock
+    title: '36 Hours'
+    text: 'From Saturday, 9 am to Sunday, 9 pm: participants have only 36 hours to create a complete animated short.'
+  - icon: bolt
+    title: '∞ Ideas'
+    text: 'Endless creativity — experiment with any form of animation and bring your wildest concepts to life.'
+about:
+  eyebrow: About
+  title: 'The Hagenberg Animation Jam'
+  gallery:
+    - { image: animationjam_about_1.webp, description: 'A host speaking on stage next to a camera.' }
+    - { image: animationjam_about_2.webp, description: 'Participants working side by side at the jam.' }
+    - { image: animationjam_about_3.webp, description: 'Animating a character at a desk.' }
+    - { image: animationjam_about_4.webp, description: 'Filming the event.' }
+    - { image: animationjam_about_5.webp, description: 'A team on stage at the Award Ceremony.' }
+    - { image: animationjam_about_6.webp, description: 'The audience in the lecture hall.' }
+  markdown: |
+    The Hagenberg Animation Jam is an annual race to create a short animation, made by students of FH Hagenberg for students of FH Hagenberg.
+
+    Participants have 36 hours to produce an animated film based on a topic that will be announced the day before the Jam begins. During the event, our team looks after the participants by providing drinks, coffee, food, and more.
+
+    Some time after the event, the results of the Jam will be screened at FH Hagenberg during our Award Ceremony. The prizes include "Best Animation," "Best Sound," "Best Composition," "Best Storytelling," "Best Shitpost," and "Best Experimental Animation." The Award Ceremony will also be live-streamed on our [YouTube channel](https://www.youtube.com/@AnimationJamHagenberg). After all works have been shown, there will be an audience vote to determine which animations receive which prizes.
+
+    If you have any questions or are interested in the Event in general, you can get the latest news regarding the Jam on our [Discord](https://discord.gg/bwDKWyx5g2).
+sponsors:
+  title: 'Sponsored by'
+  items:
+    - { name: 'BMD Business Software', logo: sponsor_bmd.webp, width: 145, height: 64 }
+    - { name: 'UNINET it-consulting GmbH', logo: sponsor_uninet.webp, width: 229, height: 64 }

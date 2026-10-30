@@ -1,0 +1,18 @@
+name: Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # Removes past events from the home page and writes a released topic into the HTML.
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  site:
+    uses: Hagenberg-Jams/jam-engine/.github/workflows/site.yml@main
+    with:
+      project-name: hagenberg-animationjam-at
+      site-url: https://hagenberg-animationjam.at
+    secrets: inherit

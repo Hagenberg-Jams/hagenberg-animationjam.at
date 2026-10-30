@@ -1,0 +1,19 @@
+@import '../../vendor/hagenberg-jams/jam-engine/resources/assets/app.css';
+
+@source '../../_pages';
+@source '../views';
+
+/* Brand colours, based on the blue of the jam's poster */
+:root {
+    --jam-primary-50: #eef5ff;
+    --jam-primary-100: #d9e8ff;
+    --jam-primary-200: #bcd7ff;
+    --jam-primary-300: #8ebdff;
+    --jam-primary-400: #5a9af5;
+    --jam-primary-500: #2f7ae5;
+    --jam-primary-600: #1c5fc9;
+    --jam-primary-700: #174ba3;
+    --jam-primary-800: #163f84;
+    --jam-primary-900: #16366c;
+    --jam-primary-950: #0f2245;
+}
