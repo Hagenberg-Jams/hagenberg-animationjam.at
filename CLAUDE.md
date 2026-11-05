@@ -17,7 +17,7 @@ php hyde jam:topic-release 2026-11-20 19:00  # sets the topic release of the new
 ## Rules
 
 - This repository only holds content and settings. Shared behaviour belongs in the engine: https://github.com/Hagenberg-Jams/jam-engine
-- Never write a jam's topic into this public repository before its `topic_release`. It belongs in the `JAM_TOPIC` secret until then.
+- Never write a jam's topic into this public repository before its `topic_release`. It belongs in the `JAM_TOPIC` GitHub secret until then. The workflow uploads it to Cloudflare as `JAM_TOPIC_DATA` together with the year, see section 4 of `README.md`.
 - Pushing to `main` deploys to production immediately. Use a pull request for a preview.
 - Quote dates with a time in YAML, for example `'2026-11-21T09:00:00+01:00'`.
 - Code, comments, site copy and docs are in English.
