@@ -37,7 +37,13 @@ To change the look of a part of the page, copy the matching view from `vendor/ha
    php hyde jam:create-jam
    ```
 
-   Answer the question about the topic release, and do not enter the topic.
+   Answer the question about the topic release, and do not enter the topic. To change the release time later, run:
+
+   ```bash
+   php hyde jam:topic-release 2026-11-20 19:00
+   ```
+
+   Then commit and push. `--year=YYYY` picks another jam, `--remove` turns the countdown off.
 
 2. Add the topic as a secret under **Settings → Secrets and variables → Actions** on GitHub:
    - `JAM_TOPIC`: the topic

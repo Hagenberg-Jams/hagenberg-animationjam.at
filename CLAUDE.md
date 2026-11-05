@@ -11,6 +11,7 @@ php hyde serve            # dev server
 php hyde build            # builds the site into _site/
 php hyde jam:validate     # checks the data
 php hyde jam:check-links  # checks internal links of the built site
+php hyde jam:topic-release 2026-11-20 19:00  # sets the topic release of the newest jam
 ```
 
 ## Rules
