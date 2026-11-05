@@ -1298,16 +1298,16 @@
         },
         {
             "name": "hagenberg-jams/jam-engine",
-            "version": "v0.1.3",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Hagenberg-Jams/jam-engine.git",
-                "reference": "a2f158b163e232954768edf77b67df25f4984596"
+                "reference": "d8baa86e4f6b218f38f94adcae8015e5328c9b7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Hagenberg-Jams/jam-engine/zipball/a2f158b163e232954768edf77b67df25f4984596",
-                "reference": "a2f158b163e232954768edf77b67df25f4984596",
+                "url": "https://api.github.com/repos/Hagenberg-Jams/jam-engine/zipball/d8baa86e4f6b218f38f94adcae8015e5328c9b7d",
+                "reference": "d8baa86e4f6b218f38f94adcae8015e5328c9b7d",
                 "shasum": ""
             },
             "require": {
@@ -1358,10 +1358,10 @@
             ],
             "description": "Reusable HydePHP engine for Hagenberg jam websites.",
             "support": {
-                "source": "https://github.com/Hagenberg-Jams/jam-engine/tree/v0.1.3",
+                "source": "https://github.com/Hagenberg-Jams/jam-engine/tree/v0.1.4",
                 "issues": "https://github.com/Hagenberg-Jams/jam-engine/issues"
             },
-            "time": "2026-11-05T21:32:51+00:00"
+            "time": "2026-11-05T23:33:20+00:00"
         },
         {
             "name": "hyde/framework",
