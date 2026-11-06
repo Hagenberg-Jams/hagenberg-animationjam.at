@@ -30,9 +30,30 @@ return [
     'latest_jam' => env('JAM_LATEST_JAM', '2026'),
 
     'registration' => [
-        'active' => false,
+        'active' => true,
         'url' => '',
-        'deadline' => '',
+        // Provisional until the team confirms the deadline.
+        'deadline' => '2026-11-18 23:59',
+        'form' => [
+            'enabled' => true,
+            'team_size' => [1, 6],
+            'onsite_capacity' => null,
+            'fields' => [
+                'participation' => false,
+                'discord' => true,
+                'programs' => false,
+                'comment' => true,
+            ],
+            'nickname_label' => 'Nickname or artist name',
+            // Organisers are in the GitHub secret JAM_REGISTRATION_NOTIFY.
+            'from' => 'noreply@hagenberg-animationjam.at',
+            'retention_days' => 90,
+            'turnstile_site_key' => '0x4AAAAAAF1l4nKLfg338ULF',
+            'access' => [
+                'team' => 'hagenberg-jams',
+                'aud' => '2463644e00132d480080a88533ff36ca72e5f92c020f08230c1b4752ad027713',
+            ],
+        ],
     ],
 
     'features' => [
