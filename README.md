@@ -156,6 +156,6 @@ If registration is still open, close it with `'active' => false` in `config/jam.
 
 ## 6. Updates and help
 
-When there is a new version of the engine, Dependabot opens a pull request. Check its preview, then merge it.
+Dependabot checks for updates once a week and opens at most one pull request each for `composer` (PHP packages and the engine), `npm` and `actions` (the shared workflow of the engine). A new engine version comes as two of them, `composer` and `actions`: merge both, so that package and workflow match. Check the preview of each pull request before merging.
 
 Use `php hyde list jam` to see all commands. For problems or ideas that concern the engine, open an issue in the [engine repository](https://github.com/Hagenberg-Jams/jam-engine/issues).
