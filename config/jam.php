@@ -23,16 +23,16 @@ return [
     ],
 
     'social' => [
-        'youtube' => 'https://www.youtube.com/@AnimationJamHagenberg',
-        'discord' => 'https://discord.gg/bwDKWyx5g2',
+        'youtube' => 'https://www.youtube.com/@hagenberganimationjam',
+        'discord' => 'https://discord.gg/KWnxDk5dXP',
     ],
 
     'latest_jam' => env('JAM_LATEST_JAM', '2026'),
 
     'registration' => [
-        'active' => false,
-        'url' => '',
-        'deadline' => '',
+        'active' => true,
+        'url' => 'https://forms.gle/maLQY5B7UceQki8z7',
+        'deadline' => '2026-11-16 23:59',
     ],
 
     'features' => [
