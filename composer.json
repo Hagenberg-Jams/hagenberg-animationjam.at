@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "hagenberg-jams/jam-engine": "^0.1.1"
+        "hagenberg-jams/jam-engine": "^0.2"
     },
     "require-dev": {
         "hyde/realtime-compiler": "^4.5"
