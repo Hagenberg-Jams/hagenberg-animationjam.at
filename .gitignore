@@ -29,3 +29,6 @@
 !/_input/download/
 /_input/download/*
 !/_input/download/.gitkeep
+
+# Downloads of jam:fetch-submissions
+/submissions

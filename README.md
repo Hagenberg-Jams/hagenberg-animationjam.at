@@ -153,13 +153,16 @@ Uploads stay open after the end of the jam and are marked as late, for example f
    ```
 
 2. Push, then delete the secrets `JAM_TOPIC`, `JAM_TOPIC_VIDEO` and `JAM_TOPIC_DESCRIPTION` on GitHub. **Do it in this order,** because without the secret and without `topic:` in the file the topic disappears from the site. Nothing needs to be deleted on Cloudflare: the server ignores a topic from an earlier year.
-3. Add the animations, one at a time. Put the header image in `_input/header/` and any further images in `_input/screenshots/`, then run:
+3. Download the uploads of all teams, then add the animations one at a time:
 
    ```bash
-   php hyde jam:add-project --year=YYYY
+   php hyde jam:fetch-submissions                       # into submissions/YYYY/<team>/
+   php hyde jam:add-project --submission=<team>         # <team> is the folder name, for example the-awesomes
    ```
 
-   It asks for the name, the YouTube links, the description, the team and the awards. The header image is cropped to 1920×520, further images are scaled to fit 1920×1080.
+   `jam:fetch-submissions` needs `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` in `.env`. Ask for an R2 token that can read the bucket. The videos are in `submissions/YYYY/<team>/uploads/`: put them on YouTube first. `jam:add-project --submission` takes name, team, members and description from the README and the stills as images, and asks for the YouTube links and the awards. The first still becomes the header image, cropped to 1920×520.
+
+   Without an upload, put the header image in `_input/header/` and further images in `_input/screenshots/`, and run `php hyde jam:add-project --year=YYYY`. It asks for everything.
 4. Enter the winners with the keys from `awards` in `config/jam.php`, for example `winner: animation, sound`. The command asks for them too.
 5. Once the animations have team members, turn on `'people' => true` under `features` in `config/jam.php`. It adds a page for each participant.
 
