@@ -130,6 +130,17 @@ If the countdown reaches zero and no topic appears, the secret did not reach the
 
 If registration is still open, close it with `'active' => false` in `config/jam.php`. The announcement disappears from the home page when the jam starts, the topic block after the last day of the jam.
 
+### Uploads at the end of the jam
+
+Teams upload their video, a README.md and 3 stills at `/submit`. The page is not linked anywhere, so share the link when you announce the uploads.
+
+1. **Teams:** put every team into `_data/teams/YYYY.yaml`, one per line, for example `- The Awesomes`, and push. Only these teams can be chosen. Do not rename a team after its first upload.
+2. **Upload code:** teams need it to upload. It is the GitHub secret `JAM_SUBMISSION_CODE`. Change it there and run the workflow to use a new one.
+3. **Announcement:** post the link to `/submit`, the upload code and the link to the README template `/submit/README.md`, for example on Discord.
+4. **Downloads:** open `/admin/submissions`. Cloudflare Access sends a one-time code to everyone in the policy "Animation Jam Organizers". The page shows every team, its uploads, the latest version, late uploads, the README and the stills, with download links.
+
+Uploads stay open after the end of the jam and are marked as late, for example for a fixed version. Turn the page off with `'enabled' => false` under `submission` in `config/jam.php` when you no longer need it.
+
 ### After the jam
 
 1. Add the topic to `_data/jams/YYYY.yaml`, and the video and description if there were any:

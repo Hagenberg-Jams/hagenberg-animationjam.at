@@ -35,6 +35,21 @@ return [
         'deadline' => '2026-11-16 23:59',
     ],
 
+    // Upload page at /submit for the end of the jam. Teams come from _data/teams/YYYY.yaml,
+    // the upload code from the GitHub secret JAM_SUBMISSION_CODE. See the README of the engine.
+    'submission' => [
+        'enabled' => true,
+        // Empty: the end of the jam. Later uploads are marked as late.
+        'deadline' => '',
+        'turnstile_site_key' => '0x4AAAAAAF1l4nKLfg338ULF',
+        'from' => 'noreply@hagenberg-animationjam.at',
+        // The Cloudflare Access application "Animation Jam Admin" protects /admin/submissions.
+        'access' => [
+            'team' => 'hagenberg-jams',
+            'aud' => '2463644e00132d480080a88533ff36ca72e5f92c020f08230c1b4752ad027713',
+        ],
+    ],
+
     'features' => [
         // Turn this on once _data/projects/ contains projects with team members.
         'people' => false,
