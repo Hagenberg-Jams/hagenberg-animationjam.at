@@ -30,7 +30,7 @@ return [
     'latest_jam' => env('JAM_LATEST_JAM', '2026'),
 
     'registration' => [
-        'active' => true,
+        'active' => false,
         'url' => 'https://forms.gle/maLQY5B7UceQki8z7',
         'deadline' => '2026-11-16 23:59',
     ],
