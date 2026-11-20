@@ -1302,12 +1302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Hagenberg-Jams/jam-engine.git",
-                "reference": "f4a277f4e92d65c86815a582a55729567da49e5d"
+                "reference": "8747b4272b3fcab241b580ffeb927f9b3ab36903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Hagenberg-Jams/jam-engine/zipball/f4a277f4e92d65c86815a582a55729567da49e5d",
-                "reference": "f4a277f4e92d65c86815a582a55729567da49e5d",
+                "url": "https://api.github.com/repos/Hagenberg-Jams/jam-engine/zipball/8747b4272b3fcab241b580ffeb927f9b3ab36903",
+                "reference": "8747b4272b3fcab241b580ffeb927f9b3ab36903",
                 "shasum": ""
             },
             "require": {
@@ -1361,7 +1361,7 @@
                 "source": "https://github.com/Hagenberg-Jams/jam-engine/tree/submission",
                 "issues": "https://github.com/Hagenberg-Jams/jam-engine/issues"
             },
-            "time": "2026-11-20T07:54:22+00:00"
+            "time": "2026-11-20T07:57:42+00:00"
         },
         {
             "name": "hyde/framework",
