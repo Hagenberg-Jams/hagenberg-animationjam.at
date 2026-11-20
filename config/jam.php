@@ -43,6 +43,11 @@ return [
         'deadline' => '',
         'turnstile_site_key' => '0x4AAAAAAF1l4nKLfg338ULF',
         'from' => 'noreply@hagenberg-animationjam.at',
+        // The Cloudflare Access application "Animation Jam Admin" protects /admin/submissions.
+        'access' => [
+            'team' => 'hagenberg-jams',
+            'aud' => '2463644e00132d480080a88533ff36ca72e5f92c020f08230c1b4752ad027713',
+        ],
     ],
 
     'features' => [
