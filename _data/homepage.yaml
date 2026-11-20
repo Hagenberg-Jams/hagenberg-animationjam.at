@@ -51,6 +51,12 @@ sponsors:
   title: 'Sponsored by'
   items:
     -
+      name: AnimaPlus
+      url: 'https://animaplus.at/'
+      logo: sponsor_animaplus.webp
+      width: 119
+      height: 64
+    -
       name: Reisewelt
       url: 'https://www.reisewelt.at/de/index.html'
       logo: sponsor_reisewelt.svg
