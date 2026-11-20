@@ -5,25 +5,40 @@ hero:
   images:
     - animationjam_hero.webp
 highlights:
-  - icon: document
+  -
+    icon: document
     title: '1 Topic'
     text: 'Each Hagenberg Animation Jam revolves around one existing topic, revealed shortly before the event begins.'
-  - icon: clock
+  -
+    icon: clock
     title: '36 Hours'
     text: 'From Saturday, 9 am to Sunday, 9 pm: participants have only 36 hours to create a complete animated short.'
-  - icon: bolt
+  -
+    icon: bolt
     title: '∞ Ideas'
     text: 'Endless creativity — experiment with any form of animation and bring your wildest concepts to life.'
 about:
   eyebrow: About
   title: 'The Hagenberg Animation Jam'
   gallery:
-    - { image: animationjam_about_1.webp, description: 'A host speaking on stage next to a camera.' }
-    - { image: animationjam_about_2.webp, description: 'Participants working side by side at the jam.' }
-    - { image: animationjam_about_3.webp, description: 'Animating a character at a desk.' }
-    - { image: animationjam_about_4.webp, description: 'Filming the event.' }
-    - { image: animationjam_about_5.webp, description: 'A team on stage at the Award Ceremony.' }
-    - { image: animationjam_about_6.webp, description: 'The audience in the lecture hall.' }
+    -
+      image: animationjam_about_1.webp
+      description: 'A host speaking on stage next to a camera.'
+    -
+      image: animationjam_about_2.webp
+      description: 'Participants working side by side at the jam.'
+    -
+      image: animationjam_about_3.webp
+      description: 'Animating a character at a desk.'
+    -
+      image: animationjam_about_4.webp
+      description: 'Filming the event.'
+    -
+      image: animationjam_about_5.webp
+      description: 'A team on stage at the Award Ceremony.'
+    -
+      image: animationjam_about_6.webp
+      description: 'The audience in the lecture hall.'
   markdown: |
     The Hagenberg Animation Jam is an annual race to create a short animation, made by students of FH Hagenberg for students of FH Hagenberg.
 
@@ -35,5 +50,15 @@ about:
 sponsors:
   title: 'Sponsored by'
   items:
-    - { name: 'BMD Business Software', logo: sponsor_bmd.webp, width: 145, height: 64 }
-    - { name: 'UNINET it-consulting GmbH', logo: sponsor_uninet.webp, width: 229, height: 64 }
+    -
+      name: Reisewelt
+      url: 'https://www.reisewelt.at/de/index.html'
+      logo: sponsor_reisewelt.svg
+      width: 690
+      height: 400
+    -
+      name: 'Jobliner GmbH'
+      url: 'https://www.jobliner.at/'
+      logo: sponsor_jobliner-gmbh.svg
+      width: 8504
+      height: 2551
