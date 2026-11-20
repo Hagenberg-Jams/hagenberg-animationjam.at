@@ -111,6 +111,8 @@ The topic must stay secret until the release time, but this repository and the b
 1. On GitHub, open **Settings → Secrets and variables → Actions** and click **New repository secret**.
 2. Add `JAM_TOPIC` with the topic as plain text, for example `Lost in Time`.
 3. Optional: add `JAM_TOPIC_VIDEO` with the YouTube ID of a reveal video. That is only the part after `v=`, for example `dQw4w9WgXcQ`. Set the video to unlisted on YouTube until the release.
+   Optional: add `JAM_TOPIC_DESCRIPTION` with a short text that explains the topic. Line breaks are kept, Markdown and HTML are not rendered.
+   If this year has no video or description, delete the secret from last year, otherwise the old value is shown with the new topic.
 4. Open **Actions → Site → Run workflow** and run it on `main`.
 5. Open the run when it is finished. The step **Transfer the topic to Cloudflare** must show `Success! Uploaded secret JAM_TOPIC_DATA`.
 
@@ -130,14 +132,16 @@ If registration is still open, close it with `'active' => false` in `config/jam.
 
 ### After the jam
 
-1. Add the topic to `_data/jams/YYYY.yaml`, and the video if there was one:
+1. Add the topic to `_data/jams/YYYY.yaml`, and the video and description if there were any:
 
    ```yaml
    topic: 'Lost in Time'
    topic_video: 'dQw4w9WgXcQ'
+   topic_description: |
+     A short text that explains the topic.
    ```
 
-2. Push, then delete the secrets `JAM_TOPIC` and `JAM_TOPIC_VIDEO` on GitHub. **Do it in this order,** because without the secret and without `topic:` in the file the topic disappears from the site. Nothing needs to be deleted on Cloudflare: the server ignores a topic from an earlier year.
+2. Push, then delete the secrets `JAM_TOPIC`, `JAM_TOPIC_VIDEO` and `JAM_TOPIC_DESCRIPTION` on GitHub. **Do it in this order,** because without the secret and without `topic:` in the file the topic disappears from the site. Nothing needs to be deleted on Cloudflare: the server ignores a topic from an earlier year.
 3. Add the animations, one at a time. Put the header image in `_input/header/` and any further images in `_input/screenshots/`, then run:
 
    ```bash
@@ -150,7 +154,7 @@ If registration is still open, close it with `'active' => false` in `config/jam.
 
 ## 5. Rules
 
-- **Never write the topic into a file in this repository before its release.** The repository is public. The build stops if `topic:` is in a YAML file before `topic_release`.
+- **Never write the topic into a file in this repository before its release.** The repository is public. The build stops if `topic:`, `topic_video:` or `topic_description:` is in a YAML file before `topic_release`.
 - Everything on `main` is live. Use a pull request when you are unsure.
 - Only add photos you have the rights to, and only of people who agreed to be shown.
 
